@@ -89,7 +89,7 @@ img::selection{
 .link {
     color: #fff;
     position: absolute;
-    left: 30%;
+    left: 40%;
     top: 73%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -98,21 +98,12 @@ img::selection{
     height: 50%;
     color: #fff;
     position: absolute;
-    left: 55%;
+    left: 65%;
     top: 73%;
     transform: translateX(-50%);
     white-space: nowrap;
 }
-.link3 {
-    height: 50%;
-    color: #fff;
-    position: absolute;
-    left: 80%;
-    top: 74%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-}
-.link:hover, .link2:hover, .link3:hover {
+.link:hover, .link2:hover {
     opacity: 0.5;
 }
 
