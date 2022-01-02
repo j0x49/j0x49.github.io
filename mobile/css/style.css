@@ -4,8 +4,8 @@
     --left-button-hover-color: rgba(161, 11, 11, 0.3);
     --right-bg-color: rgba(43, 43, 43, 0.8);
     --right-button-hover-color: rgba(92, 92, 92, 0.3);
-    --hover-width: 60%;
-    --other-width: 40%;
+    --hover-width: 50%;
+    --other-width: 50%;
     --speed: 550ms;
 }
 
@@ -32,7 +32,7 @@ h2 {
     color: #fff;
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 15%;
     transform: translateX(-50%);
     white-space: nowrap;
 }
@@ -90,7 +90,7 @@ img::selection{
     color: #fff;
     position: absolute;
     left: 30%;
-    top: 73%;
+    top: 65%;
     transform: translateX(-50%);
     white-space: nowrap;
 }
@@ -99,7 +99,7 @@ img::selection{
     color: #fff;
     position: absolute;
     left: 55%;
-    top: 73%;
+    top: 65%;
     transform: translateX(-50%);
     white-space: nowrap;
 }
@@ -107,8 +107,8 @@ img::selection{
     height: 50%;
     color: #fff;
     position: absolute;
-    left: 80%;
-    top: 74%;
+    left: 78%;
+    top: 65.5%;
     transform: translateX(-50%);
     white-space: nowrap;
 }
@@ -117,40 +117,40 @@ img::selection{
 }
 
 .jmaxodar {
-    top: 43%;    
+    top: 35%;    
 }
 .minijmax {
-    top: 53%;    
+    top: 43%;    
 }
 .inhider {
-    top: 63%; 
+    top: 51%; 
 }
 .twitto {
-    top: 73%; 
+    top: 59%; 
 }
 .more {
-    top: 83%; 
+    top: 67%; 
 }
 
 
 .info {
-    top: 40%;
+    top: 35%;
 }
 .info2 {
-    top: 45%;
+    top: 40%;
 }
 .info3 {
-    top: 50%;
+    top: 45%;
 }
 .info4 {
-    top: 55%;
+    top: 50%;
 }
-.split.left .button:hover {
+ .button:hover {
     background-color: var(--left-button-hover-color);
     border-color: var(--left-button-hover-color);
 }
 
-.split.right .button:hover {
+ .button:hover {
     background-color: var(--right-button-hover-color);
     border-color: var(--right-button-hover-color);
 }
@@ -200,30 +200,7 @@ img::selection{
     transition: var(--speed) all ease-in-out;
 }
 
-.hover-left .left {
-    width: var(--hover-width);
-}
 
-.hover-left .right {
-    width: var(--other-width);
-}
-
-.hover-left .right:before {
-    z-index: 2;
-}
-
-
-.hover-right .right {
-    width: var(--hover-width);
-}
-
-.hover-right .left {
-    width: var(--other-width);
-}
-
-.hover-right .left:before {
-    z-index: 2;
-}
 
 @media(max-width: 800px) {
 h1 {

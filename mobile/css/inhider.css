@@ -4,8 +4,8 @@
 --left-button-hover-color: rgba(161, 11, 11, 0.3);
 --right-bg-color: rgba(43, 43, 43, 0.8);
 --right-button-hover-color: rgba(92, 92, 92, 0.3);
---hover-width: 51.5%;
---other-width: 48.5%;
+--hover-width: 50%;
+--other-width: 50%;
 --speed: 550ms;
 }
 
@@ -16,9 +16,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 width: 100%;
 height: 100%;
 overflow-x: hidden;
-background-image: linear-gradient(to bottom, orange, orange 50%, green 50%, green);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 h1 {
@@ -26,7 +23,7 @@ font-size: 4rem;
 color: #fff;
 position: absolute;
 left: 50%;
-top: 40%;
+top: 30%;
 transform: translateX(-50%);
 white-space: nowrap;
 }
@@ -71,32 +68,44 @@ img::selection{
     margin-left: 40px;
     margin-right:40px ;
 }
+.minijmax {
+    left: 50%;
+    top: 50%;    
+}
 .link {
     color: #fff;
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
 }
 .back {
     color: #fff;
     position: absolute;
-    left: 5%;
+    left: 15%;
     top: 5%;
     transform: translateX(-50%);
     white-space: nowrap;
 }
-.back:hover {
-    opacity: 0.5;
+
+.info {
+    top: 35%;
 }
-
-
+.info2 {
+    top: 40%;
+}
+.info3 {
+    top: 45%;
+}
+.info4 {
+    top: 50%;
+}
 .projImg{
     color: #fff;
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 58%;
     transform: translateX(-50%);
     white-space: nowrap;
 }
@@ -119,54 +128,9 @@ text-decoration: none;
 transform: translateX(-50%);
 }
 
-
-.jmaxodar {
-    left: 20%;
-    top: 15%;    
-}
-.minijmax {
-    left: 50%;
-    top: 15%;    
-}
-.inhider {
-    left: 80%;
-    top: 15%;    
-}
-
-
-.twitto {
-    left: 20%;
-    top: 25%;    
-}
-.something1 {
-    left: 50%;
-    top: 25%;    
-}
-
-.something2 {
-    left: 80%;
-    top: 25%;    
-}
-
-
-.something3 {
-    left: 20%;
-    top: 35%;    
-}
-.something4 {
-    left: 50%;
-    top: 35%;    
-}
-.something5 {
-    left: 80%;
-    top: 35%;    
-}
-
-.button:hover {
-background-color: red;
-border-color: red;
-border-radius: 5px;
-
+.split.left .button:hover {
+background-color: var(--left-button-hover-color);
+border-color: var(--left-button-hover-color);
 }
 
 .split.right .button:hover {
@@ -175,11 +139,10 @@ border-color: var(--right-button-hover-color);
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(43, 43, 43);
-    background-image: linear-gradient( -45deg, rgb(151, 23, 23) 50%, rgb(151, 23, 23) 50%, rgb(43, 43, 43) 50%, rgb(43, 43, 43) 50%);
+position: relative;
+width: 100%;
+height: 100%;
+background: var(--container-bg-color);
 }
 
 .split {
@@ -220,30 +183,7 @@ background: var(--right-bg-color);
 transition: var(--speed) all ease-in-out;
 }
 
-.hover-left .left {
-width: var(--hover-width);
-}
 
-.hover-left .right {
-width: var(--other-width);
-}
-
-.hover-left .right:before {
-z-index: 2;
-}
-
-
-.hover-right .right {
-width: var(--hover-width);
-}
-
-.hover-right .left {
-width: var(--other-width);
-}
-
-.hover-right .left:before {
-z-index: 2;
-}
 
 @media(max-width: 800px) {
 h1 {
@@ -325,61 +265,15 @@ h1 {
 #next-btn:hover, #prev-btn:hover{
     opacity: 0.6;
 }
+.image-box{
+    height: 20vh;
+    width: 40vh;
+}
+#prev-btn{
 
-
-/****** media queries *******/
-@media(max-width: 1536px){
-
-    .image-box{
-        height: 70vh;
-        width: 120vh;
-    }
-    #prev-btn{
-    
-        left: -10vh;
-    }
-    
-    #next-btn{
-    
-        left: 122vh;
-    }
+    left: -5vh;
 }
 
-@media(max-width: 992px){
-
-    .image-box{
-        height: 40vh;
-        width: 70vh;
-    }
-    #prev-btn{
-    
-        left: -10vh;
-    }
-    
-    #next-btn{
-    
-        left: 70vh;
-    }
-}
-
-@media(max-width: 678px){
-    .image-box{
-        height: 40vh;
-    }
-}
-
-@media(max-width: 400px){
-    .image-box{
-        height: 15vh;
-        width: 30vh;
-    }
-    #prev-btn{
-
-        left: -10vh;
-    }
-    
-    #next-btn{
-
-        left: 70vh;
-    }
+#next-btn{
+    left: 42vh;
 }
