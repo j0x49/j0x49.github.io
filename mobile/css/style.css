@@ -95,7 +95,6 @@ img::selection{
     white-space: nowrap;
 }
 .link2 {
-    height: 50%;
     color: #fff;
     position: absolute;
     left: 55%;
@@ -104,7 +103,6 @@ img::selection{
     white-space: nowrap;
 }
 .link3 {
-    height: 50%;
     color: #fff;
     position: absolute;
     left: 78%;
