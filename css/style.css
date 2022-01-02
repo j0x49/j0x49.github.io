@@ -103,6 +103,10 @@ img::selection{
     transform: translateX(-50%);
     white-space: nowrap;
 }
+.link:hover, .link2:hover {
+    opacity: 0.5;
+}
+
 .jmaxodar {
     top: 43%;    
 }
