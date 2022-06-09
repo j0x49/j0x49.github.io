@@ -1,7 +1,17 @@
 
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #1f2124 url("../img/loading.gif") no-repeat center;
+  z-index: 99999;
+}
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 ::selection {
   background-color: #cd0000;
   color: white;
@@ -9,6 +19,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  /* background-color: rgb(43, 41, 41); */
 }
 
 a {
@@ -224,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 #hero p {
   color: #fff;
@@ -599,6 +611,12 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#newSec {
+  padding: 0px;
+  padding-bottom: 0;
+  padding-top: 50px;
+  overflow: hidden;
+}
 .services .icon-box {
   margin-bottom: 50px;
 }
@@ -804,3 +822,33 @@ section {
     padding-right: 20px 15px;
   }
 }
+/* .all-content {
+  display: none;
+}
+.loader-gif {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: rgb(44, 32, 32);
+  position: absolute;
+}
+.loader-gif>div {
+  height: 100px;
+  width: 100px;
+  border: 3px solid rgb(87, 87, 87);
+  border-top-color: #cd0000;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: spin 1.5s infinite;
+}
+
+@keyframes spin {
+  100%{
+    transform: rotate(360deg);
+  }
+} */
